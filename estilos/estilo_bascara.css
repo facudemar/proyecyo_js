@@ -152,3 +152,17 @@ p{
     padding: 20px;
     margin-left: 20px;
 }
+
+.boton{
+    border: none;
+    color: #45f3ff;
+    font-size: 60px;
+    text-decoration: none;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}

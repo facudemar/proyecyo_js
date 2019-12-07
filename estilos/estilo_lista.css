@@ -3,9 +3,24 @@
 
 /* Reseteo */
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #23242a;
     font-family: Poppins;
-    color: #45f3ff;
+    outline: none;
+}
+
+/* Efecto Hover */
+.resolucion:hover{
+    background-color: #45f3ffd7;
+    color: black;
+}
+
+/* Section */
+section{
+    display: flex;
+    justify-content: center;
 }
 
 /* Codigo de Barra Led */
@@ -15,6 +30,7 @@
     height: 10px;
     background: #fff;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+    padding-top: 10px;
 }
 
 .barra::before{
@@ -44,6 +60,7 @@
 }
 
 /* Header */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -64,7 +81,52 @@ a{
     text-decoration: none;
     color: #45f3ff;
 }
-/* p */
-p{
-    font-size: 17px;
+
+.boton_agregar{
+    border: none;
+    padding: 15px;
+    color: #45f3ff;
+    font-size: 40px;
+    text-decoration: none;
+}
+.boton_agregar a:hover{
+    color: white;
+}
+
+/* h3 */
+h3{
+    color: #45f3ff;
+    font-size: 50px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+.nueva_tarea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nueva_tarea input{
+    font-size: 20px;
+    color: white;
+    border: 3px solid #45f3ff;
+}
+
+.nombre_tarea{
+    color: white;
+    font-size: 30px;
+}
+
+.boton_tarea_borrar{
+    font-size: 25px;
+    color: red;
+}
+.boton_tarea_completa{
+    font-size: 25px;
+    color: rgb(27, 175, 27);
+}
+.completa{
+    color: gray;
 }

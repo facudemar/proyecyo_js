@@ -25,3 +25,6 @@ function limpiar(){
 function borrar(){
     pantalla_calc.value = pantalla_calc.value.slice(0,-1)
 }
+
+let numeros= [1,2,3]
+console.log(...numeros)

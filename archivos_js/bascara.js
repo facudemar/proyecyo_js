@@ -3,7 +3,7 @@ function resolucion(){
     let b = document.getElementById("b").value;
     let c = document.getElementById("c").value;
     let titulo=document.getElementById("raices")
-    titulo.innerText="Resultado Raices:"
+    titulo.innerText="Resultado Raices"
     console.log(titulo)
     let num_a= parseInt(a);
     let num_b= parseInt(b);
@@ -11,13 +11,11 @@ function resolucion(){
     let raiz= (num_b**2)-(4*num_a*num_c)
     
     if (num_a==0){
-        document.getElementById("x1").value = "";
-        document.getElementById("x2").value = "";
         titulo.innerText="El denominador es 0, no se puede resolver"
+        
+
     }
     else if(raiz<0){
-        document.getElementById("x1").value = "";
-        document.getElementById("x2").value = "";
         titulo.innerText="Las raices son imaginarias"
     }
     else{
