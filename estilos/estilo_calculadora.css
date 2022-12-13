@@ -1,0 +1,128 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #23242a;
+    font-family: Poppins;
+    outline: none;
+}
+/* Clase contenedora */
+.contenedora{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Clase calculadora */
+.calculadora{
+    background-color: #23242a;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 12px #45f3ff,
+                    5px 5px 12px #45f3ff;
+    display: grid;
+    grid-template-columns: repeat(4,68px);
+}
+/* Pantalla */
+input{
+    grid-column: span 4;
+    height: 70px;
+    background-color: #23242a;
+    box-shadow: inset -2px -2px 8px #45f3ffb4;
+    border: none;
+    border-radius: 20px;
+    color: #45f3ff;
+    font-size: 50px;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+/* Botones */
+.tecla{
+    height: 50px;
+    width: 50px;
+    background-color: #23242ae8;
+    box-shadow: inset 2px 2px 8px #45f3ff,
+                    2px 2px 6px #45f3ff;
+    border: none;
+    border-radius: 40px;
+    color: #45f3ff;
+    margin: 5px;
+    font-size: 14px;
+}
+.limpiar{
+    background-color: #45f3ff;
+    color: black;
+}
+/* Efecto Hover */
+.tecla:hover{
+    background-color: #45f3ffd7;
+    color: black;
+}
+.limpiar:hover{
+    background-color: #36d2ddd7;
+    color: white;
+}
+
+/* Codigo de Barra Led */
+
+.barra{
+    position: relative;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+.barra::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+}
+.barra::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animar{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color:#45f3ff;
+    font-size: 80px;
+}
+
+.boton{
+    border: none;
+    color: #45f3ff;
+    font-size: 60px;
+    text-decoration: none;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}

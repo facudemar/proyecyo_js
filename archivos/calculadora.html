@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo_calculadora.css">
+    <title>Calculadora</title>
+
+</head>
+<body>
+    <header class="titulo"><button class="boton"><a href="../index.html"><</a></button>Calculadora<button class="boton"></button> </header>
+    <div class="barra"></div>
+    <div class="contenedora">
+        <div class="calculadora">
+            <input type="text" placeholder="0" id="pantalla">
+            <button class="tecla limpiar" onclick="limpiar()">Cl</button>
+            <button class="tecla" onclick="borrar()">Del</button>
+            <button class="tecla" onclick="mostrar('%')">%</button>
+            <button class="tecla" onclick="mostrar('/')">/</button>
+            <button class="tecla" onclick="mostrar('7')">7</button>
+            <button class="tecla" onclick="mostrar('8')">8</button>
+            <button class="tecla" onclick="mostrar('9')">9</button>
+            <button class="tecla" onclick="mostrar('*')">*</button>
+            <button class="tecla" onclick="mostrar('4')">4</button>
+            <button class="tecla" onclick="mostrar('5')">5</button>
+            <button class="tecla" onclick="mostrar('6')">6</button>
+            <button class="tecla" onclick="mostrar('-')">-</button>
+            <button class="tecla" onclick="mostrar('1')">1</button>
+            <button class="tecla" onclick="mostrar('2')">2</button>
+            <button class="tecla" onclick="mostrar('3')">3</button>
+            <button class="tecla" onclick="mostrar('+')">+</button>
+            <button class="tecla" onclick="mostrar('0')" accesskey="0">0</button>
+            <button class="tecla" onclick="mostrar('.')">.</button>
+            <button class="tecla" onclick="calcular()" aria-keyshortcuts="Intro" class="igual">=</button>
+            <button class="tecla" onclick="mostrar('**')">**</button>
+
+        </div>
+    </div>
+</body>
+<script src="../archivos_js/calculadora.js"></script>
+</html>

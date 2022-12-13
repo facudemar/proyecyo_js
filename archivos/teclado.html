@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado</title>
+    <link rel="stylesheet" href="../estilos/estilo_teclado.css">
+</head>
+<body>
+    <header class="titulo"><button class="boton"><a href="../index.html"><</a></button>Teclado<button class="boton"></button> </header>
+    <div class="barra"></div>
+    <section class="textos">
+        <div>
+            <p class="texto_ejemplo" id="pantalla_ejemplo">Erase una vez, hace mucho tiempo existio
+                un reino en la cima de una montaña. Al esconderse el sol, salian los murcielagos de sus cuevas que rapidamente
+            opacaban la luna.</p>
+        </div>
+        <div class="ingresado">
+            <div class="texto_ingresado" contenteditable="true" class="texto_ejemplo" id="pantalla">
+                </div>
+            
+
+        </div>
+    </section>
+    <section class="teclado">
+        <div class="contenedora">
+            <div class="fila uno">
+                <button class="tecla" onclick="mostrar('º')">º</button>
+                <button class="tecla" onclick="mostrar('1')">1</button>
+                <button class="tecla" onclick="mostrar('2')">2</button>
+                <button class="tecla" onclick="mostrar('3')">3</button>
+                <button class="tecla" onclick="mostrar('4')">4</button>
+                <button class="tecla" onclick="mostrar('5')">5</button>
+                <button class="tecla" onclick="mostrar('6')">6</button>
+                <button class="tecla" onclick="mostrar('7')">7</button>
+                <button class="tecla" onclick="mostrar('8')">8</button>
+                <button class="tecla" onclick="mostrar('9')">9</button>
+                <button class="tecla" onclick="mostrar('0')">0</button>
+                <button class="tecla" onclick="mostrar('=')">=</button>
+                <button class="tecla borradora" onclick="borrar()">Backspace</button>
+            </div>
+            <div class="fila dos">
+                <button class="tecla tabuladora" onclick="mostrar('    ')">Tab</button>
+                <button class="tecla" onclick="mostrar('Q')">Q</button>
+                <button class="tecla" onclick="mostrar('W')">W</button>
+                <button class="tecla" onclick="mostrar('E')">E</button>
+                <button class="tecla" onclick="mostrar('R')">R</button>
+                <button class="tecla" onclick="mostrar('T')">T</button>
+                <button class="tecla" onclick="mostrar('Y')">Y</button>
+                <button class="tecla" onclick="mostrar('U')">U</button>
+                <button class="tecla" onclick="mostrar('I')">I</button>
+                <button class="tecla" onclick="mostrar('O')">O</button>
+                <button class="tecla" onclick="mostrar('P')">P</button>
+                <button class="tecla" onclick="mostrar('[')">[</button>
+                <button class="tecla" onclick="mostrar(']')">]</button>
+                
+            </div>
+            <div class="fila tres">
+                <button class="tecla caps">Caps</button>
+                <button class="tecla" onclick="mostrar('A')">A</button>
+                <button class="tecla" onclick="mostrar('S')">S</button>
+                <button class="tecla" onclick="mostrar('D')">D</button>
+                <button class="tecla" onclick="mostrar('F')">F</button>
+                <button class="tecla" onclick="mostrar('G')">G</button>
+                <button class="tecla" onclick="mostrar('H')">H</button>
+                <button class="tecla" onclick="mostrar('J')">J</button>
+                <button class="tecla" onclick="mostrar('K')">K</button>
+                <button class="tecla" onclick="mostrar('L')">L</button>
+                <button class="tecla" onclick="mostrar('Ñ')">Ñ</button>
+                <button class="tecla enter">Enter</button>
+            </div>
+            <div class="fila cuatro">
+                <button class="tecla shift">Shift</button>
+                <button class="tecla" onclick="mostrar('Z')">Z</button>
+                <button class="tecla" onclick="mostrar('X')">X</button>
+                <button class="tecla" onclick="mostrar('C')">C</button>
+                <button class="tecla" onclick="mostrar('V')">V</button>
+                <button class="tecla" onclick="mostrar('B')">B</button>
+                <button class="tecla" onclick="mostrar('N')">N</button>
+                <button class="tecla" onclick="mostrar('M')">M</button>
+                <button class="tecla" onclick="mostrar(',')">,</button>
+                <button class="tecla" onclick="mostrar('.')">.</button>
+                <button class="tecla" onclick="mostrar('-')">-</button>
+                <button class="tecla" onclick="mostrar(':')">:</button>
+                <button class="tecla" onclick="mostrar('?')">?</button>
+            </div>
+            <div class="fila cinco">
+                <button class="tecla botones_abajo">Ctrl</button>
+                <button class="tecla botones_abajo">Win</button>
+                <button class="tecla botones_abajo">Alt</button>
+                <button class="tecla espaciadora" onclick="mostrar(' ')">Space</button>
+                <button class="tecla botones_abajo">Alt Gr</button>
+                <button class="tecla botones_abajo">Win</button>
+                <button class="tecla botones_abajo">Ctrl</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../archivos_js/teclado.js"></script>
+</html>

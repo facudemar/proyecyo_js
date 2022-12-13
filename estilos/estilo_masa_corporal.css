@@ -1,0 +1,148 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    outline: none;
+}
+
+/* Body */
+body{
+    background-color: #23242a;
+}
+
+/* Contenedora */
+.contenedora{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 60px;
+}
+
+/* Texto */
+.texto{
+    animation: fade-in-text 0.01s linear 1.5s forwards;
+    opacity: 0;
+    font-size: 30px;
+}
+
+/* Efecto */
+.efecto{
+    position: relative;
+}
+.efecto:after{
+    display: block;
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 60%;
+    bottom: 0;
+    z-index: 1;
+    background-color: #45f3ff;
+    box-shadow: inset 3px 3px 8px #23e5f3,
+                    3px 3px 8px #23e5f3;
+    filter: blur(4px);
+    animation: efecto 0.8s ease-in 0.8s forwards;
+}
+/* Keyframes */
+@keyframes efecto{
+    0%{
+        width: 0%;
+        left: 0;
+    }
+    50%{
+        width: 60%;
+        right:60%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        right: 60%;
+        left: 0%;
+        
+    }
+}
+@keyframes fade-in-text{
+    from {opacity: 0;}
+    to {opacity: 1;}
+    
+}
+
+/* Section */
+section{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    
+}
+
+div{
+    color: #45f3ff;
+    font-size: 30px;
+    display: flex;
+    margin-top: 10px;
+}
+
+/* Codigo de Barra Led */
+
+.barra{
+    position: relative;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+    margin-bottom: 10px;
+}
+
+.barra::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+}
+.barra::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animar{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    color:#45f3ff;
+    font-size: 80px;
+}
+
+.boton{
+    border: none;
+    font-size: 60px;
+    text-decoration: none;
+    background-color: #23242a;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}

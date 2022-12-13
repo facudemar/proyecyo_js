@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-color: #23242a;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top:-50% ;
+    left:-50% ;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    background: #28292d;
+    inset: 2px;
+    z-index: 10;
+    border-radius: 8px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2{
+    color: #45f3ff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+}
+.inputBox{
+    position:relative; 
+    width: 300px;
+    margin-top: 35px;
+}
+
+.inputBox input{
+    position:relative; 
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color:white ;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+}
+
+.inputBox span{
+    position:absolute; 
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    letter-spacing: 00.5em;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #45f3ff;
+    transform:  translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events:none ;
+}
+
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #45f3ff98;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #45f3ff;
+}
+
+input[type="submit"]{
+    align-self: center;
+    border: none;
+    outline: none;
+    background: #45f3ff ;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    opacity: 0.8;
+}
+/* Codigo de Barra Led */
+
+.barra{
+    position: relative;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+.barra::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+}
+.barra::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animar{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    color:#45f3ff;
+    font-size: 80px;
+}
+
+.boton{
+    border: none;
+    color: #45f3ff;
+    font-size: 60px;
+    text-decoration: none;
+    background-color: #23242a;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}
+
+/* Section */
+section{
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+}
