@@ -10,12 +10,12 @@
     outline: none;
 }
 
-
 /* Codigo de Barra Led */
 
 .barra{
     position: relative;
     height: 10px;
+    margin-bottom: 8px;
     background: #fff;
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
 }
@@ -52,8 +52,85 @@
     align-items: center;
     color:#45f3ff;
     align-content: center;
-}
-header{
     display: flex;
     justify-content: center;
+}
+/* h3 */
+h3{
+    color:#45f3ff;
+    font-size: 22px;
+    margin-left: 36px;
+}
+/* Section */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+/* ion-icon */
+ion-icon{
+    color:#45f3ff;
+    height: 70px;
+    width: 70px;
+}
+img{
+        height: 70px;
+        width: 70px;
+}
+/* Menu */
+.menu{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #23242a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu li */
+.menu li {
+    position: absolute;
+    list-style: none;
+    left: -90px;
+    transform-origin: 200px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translate(150px);
+}
+
+.menu.activo li{
+    transform: rotate(calc(360deg/ 8 * var(--i)));
+}
+
+.menu.activo li a ion-icon{
+    transform: rotate(calc(360deg/(-8) * var(--i)));
+}
+.menu.activo li a img{
+    transform: rotate(calc(360deg/(-8) * var(--i)));
+}
+.menu.activo li a :hover{
+    height: 90px;
+    width: 90px;
+}
+
+
+/* Contenedora */
+.contenedora{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #23242a;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2em;
+    box-shadow: 0 0px 6px #45f3ff;
+    transition: transform 1.5s;
+}
+.menu.activo  .contenedora{
+    transform: rotate(360deg);
 }

@@ -14,7 +14,6 @@
 
 /* Pantalla */
 input{
-    grid-column: span 4;
     height: 70px;
     width: 120px;
     background-color: #23242a;
@@ -41,8 +40,6 @@ input{
     color: #45f3ff;
     margin: 32px;
     font-size: 20px;
-    
-
 }
 
 /* Efecto Hover */
@@ -60,12 +57,22 @@ section{
 div{
     color: #45f3ff;
     font-size: 70px;
-    display: flex;
     padding-top: 24px;
     padding-left: 20px;
 }
 sup{
     font-size: 40px;
+}
+sub{
+    font-size: 40px;
+}
+.resultado_raices{
+    display: flex;
+    flex-direction: column;
+}
+.outputs{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Codigo de Barra Led */
@@ -113,16 +120,35 @@ header{
     font-size: 80px;
 }
 
-.boton{
+/* h3 */
+h3{
+    color: #45f3ff;
+    font-size: 50px;
+    align-self: center;
+}
+
+.formula{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+p{
+    color: #45f3ff;
+    font-size: 40px;
+}
+.resultado_x{
+    height: 70px;
+    width: 330px;
+    background-color: #23242a;
+    box-shadow: inset -2px -2px 8px #45f3ffb4;
     border: none;
+    border-radius: 20px;
     color: #45f3ff;
-    font-size: 60px;
-    text-decoration: none;
-}
-.boton a:hover{
-    color: white;
-}
-a{
-    text-decoration: none;
-    color: #45f3ff;
+    font-size: 50px;
+    text-align: end;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin-left: 20px;
 }

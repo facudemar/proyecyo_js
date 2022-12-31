@@ -12,14 +12,30 @@
     <header class="titulo"><button class="boton"><a href="../index.html"><</a></button>Bascara<button class="boton"></button> </header>
     <div class="barra"></div>
     <section>
-        <input type="text" placeholder="0" id="a">
+        <input type="text" placeholder="a" id="a">
         <div>X<sup>2</sup>+</div>
-        <input type="text" placeholder="0" id="b">
+        <input type="text" placeholder="b" id="b">
         <div>X+</div>
-        <input type="text" placeholder="0" id="c">
+        <input type="text" placeholder="c" id="c">
+        <div>=</div>
         <button class="resolucion" onclick="resolucion()">Resolver</button>
     </section>
+    <section class="formula">
+        <h3>Formula:</h3>
+            <p>\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]</p>
+    </section>
+    <section class="resultado_raices">
+        <h3 id="raices">Resultado Raices:</h3>
+        <section class="outputs">
+        <div>X<sub>1</sub> :</div>
+        <input class="resultado_x" type="text" placeholder="X1"  id="x1">
+        <div>X<sub>2</sub> :</div>
+        <input class="resultado_x" type="text" placeholder="X2"  id="x2">
+        </section>
+    </section>
+    
 </body>
-<script src="../archivos_js/bascara.js">
-</script>
+<script src="../archivos_js/bascara.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </html>

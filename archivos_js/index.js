@@ -1,3 +1,6 @@
-let array= [1,2];
-array= [3,4]
-console.log(array)
+let contenedora = document.querySelector('.contenedora');
+let menu = document.querySelector('.menu');
+
+contenedora.onclick = function(){
+    menu.classList.toggle('activo')
+}

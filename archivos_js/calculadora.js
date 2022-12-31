@@ -1,4 +1,5 @@
 let pantalla_calc = document.getElementById("pantalla");
+
 function mostrar(num){
     pantalla_calc.value +=num;
 }
@@ -12,7 +13,7 @@ function calcular(){
             pantalla_calc.value = eval(pantalla_calc.value);
         }
         catch(err){
-            alert("Argumento invalido");
+            pantalla_calc.value="Error";
         }
     }
 }
