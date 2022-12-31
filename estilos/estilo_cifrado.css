@@ -1,0 +1,136 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #23242a;
+    font-family: Poppins;
+    outline: none;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color:#45f3ff;
+    font-size: 80px;
+}
+
+.boton{
+    border: none;
+    color: #45f3ff;
+    font-size: 60px;
+    text-decoration: none;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}
+
+/* Codigo de Barra Led */
+
+.barra{
+    margin-bottom: 10px;
+    position: relative;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+.barra::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+}
+.barra::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animar{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}
+/* Section */
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.cifrar{
+    height: 80px;
+    width: 120px;
+    background-color: #23242ae8;
+    box-shadow: inset 2px 2px 8px #45f3ff,
+                    2px 2px 6px #45f3ff;
+    border: 20px;
+    border-radius: 20px;
+    color: #45f3ff;
+    margin: 32px;
+    font-size: 20px;
+}
+.cifrar:hover{
+    background-color: #45f3ffd7;
+    color: black;
+}
+
+
+/* Input de Texto */
+strong{
+    font-size: 33px;
+    color: #45f3ffb4;
+}
+.input{
+    background-color: #23242a;
+    box-shadow: inset -2px -2px 8px #45f3ffb4;
+    border: none;
+    border-radius: 20px;
+    color: #45f3ffea;
+    font-size: 27px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding: 20px;
+    display: block;
+    width: 1200px;
+    overflow: hidden;
+    resize: both;
+    min-height: 120px;
+    line-height: 27px;
+}
+.output{
+    background-color: #23242a;
+    box-shadow: inset -2px -2px 8px #45f3ffb4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 27px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding: 20px;
+    display: block;
+    width: 1200px;
+    overflow: hidden;
+    resize: both;
+    min-height: 120px;
+    line-height: 27px;
+}

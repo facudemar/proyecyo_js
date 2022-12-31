@@ -1,0 +1,70 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* Reseteo */
+*{
+    background-color: #23242a;
+    font-family: Poppins;
+    color: #45f3ff;
+}
+
+/* Codigo de Barra Led */
+
+.barra{
+    position: relative;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+
+.barra::before{
+    content:'';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+}
+.barra::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg,#c5f3f7,#9fecf1,#82eff7,#6af3fd,#45f3ff,#27d4e0,#07cbda);
+    animation: animar 10s linear infinite;
+    background-size: 500%;
+    filter: blur(20px);
+}
+
+@keyframes animar{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 500% 0;
+    }
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    color:#45f3ff;
+    font-size: 80px;
+}
+
+.boton{
+    border: none;
+    color: #45f3ff;
+    font-size: 60px;
+    text-decoration: none;
+}
+.boton a:hover{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #45f3ff;
+}
+/* p */
+p{
+    font-size: 17px;
+}

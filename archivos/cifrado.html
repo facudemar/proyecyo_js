@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estilo_cifrado.css">
+    <title>Cifrado</title>
+</head>
+<body>
+    <header class="titulo"><button class="boton"><a href="../index.html"><</a></button>Cifrado Cesar-3<button class="boton"></button> </header>
+    <div class="barra"></div>
+    <section>
+        <p><strong>Ingrese Texto a Cifrar:</strong><span class="input" role="textbox" 
+        contenteditable id="texto_input"></span></p>
+        <p><strong>Texto Cifrado:</strong><span class="output"  
+            contenteditable="false" id="texto_output"></span></p>
+    </section>
+    <section>
+        <button class="cifrar" onclick="cifrar()">Cifrar</button>
+    </section>
+</body>
+</html>
+<script src="../archivos_js/cifrado.js"></script>
