@@ -101,14 +101,14 @@ img{
 }
 
 .menu.activo li{
-    transform: rotate(calc(360deg/ 7 * var(--i)));
+    transform: rotate(calc(360deg/ 6 * var(--i)));
 }
 
 .menu.activo li a ion-icon{
-    transform: rotate(calc(360deg/(-7) * var(--i)));
+    transform: rotate(calc(360deg/(-6) * var(--i)));
 }
 .menu.activo li a img{
-    transform: rotate(calc(360deg/(-7) * var(--i)));
+    transform: rotate(calc(360deg/(-6) * var(--i)));
 }
 .menu.activo li a :hover{
     height: 90px;
